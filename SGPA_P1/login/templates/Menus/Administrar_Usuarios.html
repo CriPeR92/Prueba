@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Modulo Administracion{% endblock %}
+{% block head %}Modulo Administracion{% endblock %}
+{% block content %}
+    <form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="button" onclick=" location.href='/register' " value="Crear Usuario" name="boton1" /style='width:160px; height:35px'> 
+        <input type="submit" value="Modificar Usuario" />
+        <input type="submit" value="Eliminar Usuario" />
+        
+    </form>
+    <a href="/">Atras</a>
+{% endblock %}

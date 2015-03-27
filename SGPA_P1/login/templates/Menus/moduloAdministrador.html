@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Modulo Administracion{% endblock %}
+{% block head %}Modulo Administracion{% endblock %}
+
+{% block content %}
+    <form method="post" action=".">{% csrf_token %}
+
+		<input type="button" onclick=" location.href='Administrar_Usuarios/' " value="Administrar Usuarios" name="boton" style='width:160px; height:35px'/> 
+        <input type="hidden" name="hola" value="/Administrar/user/" />
+        <input type="submit" value="Administrar Roles" /style='width:160px; height:35px'>
+        <input type="submit" value="Administrar Proyectos" /style='width:160px; height:35px'>
+        <input type="submit" value="Login" />
+        <input type="hidden" name="next" value="/cambio" />
+        <a href="/Administrar/user/">Register</a>
+        
+    </form>
+   <B> <P ALIGN="Left"> <a href="/"> Salir </a> </P> </B>
+{% endblock %}
