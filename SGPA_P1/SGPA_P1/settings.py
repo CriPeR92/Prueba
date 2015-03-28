@@ -38,8 +38,6 @@ TEMPLATE_DIRS = (
 # Application definition
 
 AUTH_PROFILE_MODULE = 'usuario.opcionale'
-AUTH_PROFILE_MODULE = 'usuario.opcionale.meta'
-
 
 
 INSTALLED_APPS = (

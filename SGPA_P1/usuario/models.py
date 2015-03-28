@@ -9,11 +9,3 @@ class Opcionale(models.Model):
     
     def __unicode__(self):
         return self.user.username
-
-    class Meta:
-        permissions = (
-            # Permission identifier     human-readable permission name
-            ("Prueba1",               "pola"),
-            ("Prueba2",                "klasd"),
-            ("Prueba3",               "sd;lamsdklal"),
-        )

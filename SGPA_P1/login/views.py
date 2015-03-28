@@ -43,8 +43,7 @@ def logout_page(request):
 @login_required
 def home(request):
     if request.user.is_superuser:
-        return render_to_response(
-        '/admin', { 'user': request.user })
+        return HttpResponseRedirect('/admin')
     else:
         return render_to_response(
         'home.html', { 'user': request.user }
